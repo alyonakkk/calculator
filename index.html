@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLD BANK</title>
+    <link href="style.css" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- datepicker -->
+    <!-- slider -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <div class="logo-left">
+                <img src="/img/logo.jpg" alt="">
+                <div class="logo-left-text">
+                    <p class="text-20 text-logo">world bank</p>
+                    <p class="text-20">Publications</p>
+                </div>
+            </div>
+            <div class="logo-right">
+                <p class="text-26">8-800-100-5005</p>
+                <p class="text-26">+7 (3452) 522-000</p>
+            </div>
+        </div>
+        <nav class="header-nav">
+			<div class="header-nav-container">
+				<ul class="header-nav-list">
+					<a href="#">
+						<li>Кредитные карты</li>
+					</a>
+					<a href="#">
+						<li>Вклады</li>
+					</a>
+					<a href="#">
+						<li>Дебетовая карта</li>
+					</a>
+					<a href="#">
+						<li>Страхование</li>
+					</a>
+					<a href="#">
+						<li>Друзья</li>
+					</a>
+					<a href="#">
+						<li>Интренет-банк</li>
+					</a>
+				</ul>
+			</div>
+		</nav>
+    </header>
+
+    <main class="main">
+        <nav class="main-nav">
+			<ul class="main-nav-list">
+				<li class="main-list-li">
+					<a class="main-list-a" href="#">Главная</a>
+				</li>
+				<li class="main-list-li">
+					<a class="main-list-a" href="#">Вклады</a>
+				</li>
+				<li class="main-list-li">
+					<span class="main-list-a current">Калькулятор</span>
+				</li>
+			</ul>
+		</nav>
+
+        <section class="main-form">
+            <h1>Калькулятор</h1>
+            <form action="" class="form">
+                <div class="line">
+                    <label for="datepicker" class="label__text">Дата оформления вклада</label>
+                    <input type="text" id="datepicker" class="input__text">
+                </div>
+                <div class="line">
+                    <label for="summn" class="label__text">Сумма вклада</label>
+                    <input type="text" id="summn" class="input__text">
+                    <div class="slider-div">
+                        <div id="slider-1"></div>
+                        <div class="slider-title">
+                            <p><em>1 тыс. руб</em></p>
+                            <p><em>3 000 000</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <label for="years" class="label__text">Срок вклада</label>
+                    <select name="years" id="years">
+                        <option value="1">1 год</option>
+                        <option value="2">2 года</option>
+                        <option value="3">3 года</option>
+                        <option value="4">4 года</option>
+                        <option value="5">5 лет</option>
+                    </select>
+                </div>
+                <div class="line">
+                    <label for="" class="label__text">Пополнение вклада</label>
+                    <div class="radio">
+                        <input type="radio" id="no" class="input__radio" name="radio" value="no" checked>
+                        <label for="no">Нет</label>
+                        <input type="radio" id="yes" class="input__radio" name="radio" value="yes">
+                        <label for="yes">Да</label>
+                    </div>
+                </div>
+                <div class="line">
+                    <label for="sumadd" class="label__text">Сумма пополнения вклада</label>
+                    <input type="text" id="summadd" class="input__text">
+                    <div class="slider-div">
+                        <div id="slider-2"></div>
+                        <div class="slider-title">
+                            <p><em>1 тыс. руб</em></p>
+                            <p><em>3 000 000</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" class="submit" value="Рассчитать" onclick="return false;">
+                    <label for="submit">Результат: <span id="result">-</span> руб</label>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-nav-list">
+				<a href="#"><li>Кредитные карты</li></a>
+				<a href="#"><li>Вклады</li></a>
+				<a href="#"><li>Дебетовая карта</li></a>
+				<a href="#"><li>Страхование</li></a>
+				<a href="#"><li>Друзья</li></a>
+				<a href="#"><li>Интренет-банк</li></a>
+			</ul>
+		</nav>
+	</footer>
+</body>
+<script src="script.js"></script>
+</html>
